@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Info windows</title>
+    <style>
+      
+	  #map-canvas {
+		height: 400px;
+	}
+	.infowindow-content {
+		height: 230px;
+	}
+    </style>
+	
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+
+
+function initialize() {
+    
+    var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+	var mapOptions = {
+		zoom: 4,
+		center: myLatlng
+	};
+
+	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myCenter,
+    });
+
+    marker.setMap(map);
+
+    var text = '<div class="infowindow-content"><blockquote class="twitter-tweet" lang="en"><p>twitter will be embeded here </p>&mdash; Nichim Izazvan (@NichimIzazvan) <a href="https://twitter.com/NichimIzazvan/statuses/419180893035827200">January 3, 2014</a></blockquote></div>';
+    
+	var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Uluru (Ayers Rock)'
+  });
+	
+    var infowindow = new google.maps.InfoWindow({
+        content: text
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, marker);
+    });
+
+    google.maps.event.addListener(infowindow, 'domready', function () {
+        ! function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");
+    });
+}
+
+initialize();
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
