@@ -18,6 +18,6 @@ Make the following changes to twitterMapper/Backend/project/views.py
 
 
 Notes
-=====
+-----
 The classification is done via Naive Bayes (using TextBlob Library, where the classifier has been trained on a movie review data set).
 For the Twitter Stream we are using Tweepy which is a free twitter API but has access to limited tweets.
