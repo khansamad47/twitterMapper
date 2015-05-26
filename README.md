@@ -1,10 +1,10 @@
 Description
 ==========
-In this project we read tweets associated with an entered keyword by the user using a Twitter Python API and compute sentiments of the tweets' text using a classification algorithm. Other information such as the location coodinates, handle of the users are also stored. The tweets are then plotted on a world map on our webbased GUI. Each tweet is represented by a marker where the color of the marker highlights the sentiment of the tweet  (green – positive sentiment, red – negative sentiment). This enables us to have location wise sentiments for any input query given by the user.
+In this project we read tweets associated with an entered keyword by the user using a Twitter Python API and compute sentiments of the tweets' text using a classification algorithm. Other information such as the location coordinates, handle of the users are also stored. The tweets are then plotted on a world map on our web-based GUI. Each tweet is represented by a marker where the color of the marker highlights the sentiment of the tweet  (green – positive sentiment, red – negative sentiment). This enables us to have location wise sentiments for any input query given by the user.
 
 Under The Hood
 ==============
-We have developed the GUI on Javascript and user Google Maps API for the map. The server is created using Django(python). We have used Tweepy to get Twitter Data relating to the keyword. TextBlob for Sentiment Analysis. JSON library for transferring data between server and frontend.
+We have developed the GUI on JavaScript and user Google Maps API for the map. The server is created using Django(python). We have used Tweepy to get Twitter Data relating to the keyword. TextBlob for Sentiment Analysis. JSON library for transferring data between server and front-end.
 
 Mechanics 
 ==========
@@ -13,7 +13,7 @@ User enters a keyword in the GUI which is then send to our python server. Python
 How to use
 ==========
 Make the following changes to twitterMapper/Backend/project/views.py
-1) Enter appropriate information in the variables: access_key, access_secret,consumer_key, consumer_secret which can be aquired from Twitter's website.
+1) Enter appropriate information in the variables: access_key, access_secret,consumer_key, consumer_secret which can be acquired from Twitter's website.
 2) Set variable setTweetCount to the number of tweets you want to grab (set to 3 by default)
 
 
