@@ -13,8 +13,9 @@ User enters a keyword in the GUI which is then send to our python server. Python
 How to use
 ==========
 Make the following changes to twitterMapper/Backend/project/views.py
-1) Enter appropriate information in the variables: access_key, access_secret,consumer_key, consumer_secret which can be acquired from Twitter's website.
-2) Set variable setTweetCount to the number of tweets you want to grab (set to 3 by default)
+
+1. Enter appropriate information in the variables: access_key, access_secret,consumer_key, consumer_secret which can be acquired from Twitter's website.
+2. Set variable setTweetCount to the number of tweets you want to grab (set to 3 by default)
 
 
 Notes
