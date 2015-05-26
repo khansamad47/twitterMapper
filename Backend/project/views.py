@@ -7,6 +7,7 @@ access_key = ""
 access_secret = ""
 consumer_key = ""
 consumer_secret = ""
+setTweetCount=3
 
 class tweetDump:
 	dumped=0;
@@ -64,7 +65,7 @@ class CustomStreamListener(tweepy.StreamListener):
 	def __init__(self,api=None):
 		super(CustomStreamListener, self).__init__()
 		self.num_tweets=0
-		self.maxTweets=3
+		self.maxTweets=setTweetCount
 
 	def on_status(self, status):
 		print status.text
