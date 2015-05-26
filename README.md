@@ -1,6 +1,6 @@
 Description
 ==========
-In this project read tweets associated with an entered keyword by the user from the Twitter Python API and compute sentiments of the tweet text using a classification algorithm. Other information such as the location coodinates, handle of user are also stored and plotted on Google Maps. Each tweet is represented by a marker where the color of the marker highlights the sentiment of the tweet  (green – positive sentiment, red – negative sentiment). This enables us to have location wise sentiments for any input query given by the user.
+In this project we read tweets associated with an entered keyword by the user using a Twitter Python API and compute sentiments of the tweets' text using a classification algorithm. Other information such as the location coodinates, handle of the users are also stored. The tweets are then plotted on a world map on our webbased GUI. Each tweet is represented by a marker where the color of the marker highlights the sentiment of the tweet  (green – positive sentiment, red – negative sentiment). This enables us to have location wise sentiments for any input query given by the user.
 
 Under The Hood
 ==============
